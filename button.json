@@ -18,5 +18,5 @@
     "Скопировать в буфер обмена для УВ", 
     "btnforuv_5483",
     ".page-header.position-relative h1",
-    {"mouseover": [0, 1], "mouseout": [0, 0], "mousedown": [0, 2], "click": [0, 1]}
+    {"mouseover": [0, 1], "mouseout": [0, 0], "mousedown": [0, 2]}
 ]
