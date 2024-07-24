@@ -15,4 +15,8 @@
     "text-decoration": "underline"
 }, {
     "color": "black"
-}, "Скопировать в буфер обмена для УВ", "btnforuv_5483"]
+}, 
+    "Скопировать в буфер обмена для УВ", 
+    "btnforuv_5483",
+    ".page-header.position-relative h1"
+]
