@@ -10,7 +10,7 @@
     "border":                         "none",                       
     "cursor":                     "pointer",                 
     "transform":                 "scale(1.5)"               
-}, {
+},  {
     "color": "#333",
     "text-decoration": "underline"
 }, {
