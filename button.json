@@ -1,4 +1,4 @@
-{
+[{
     "font-family": "Open Sans, Helvetica",  
     "font-size":                   "15px",          
     "text-decoration":             "none",           
@@ -10,4 +10,9 @@
     "border":                         "none",                       
     "cursor":                     "pointer",                 
     "transform":                 "scale(1.5)"               
-}
+}, {
+    "color": "#333",
+    "text-decoration": "underline"
+}, {
+    "color": "black"
+}]
