@@ -1,14 +1,14 @@
 [{
     "font-family": "Open Sans, Helvetica",  
-    "font-size":                   "15px",          
-    "text-decoration":             "none",           
-    "border-radius":                 "2px",         
-    "padding-inline":               "1vh",               
-    "position":                 "relative",                
-    "color":                     "#0088cc",                    
-    "margin-left":                   "1vh",              
-    "border":                         "none",                       
-    "cursor":                     "pointer"              
+    "font-size": "15px",          
+    "text-decoration":  "none",           
+    "border-radius": "2px",         
+    "padding-inline": "1vh",               
+    "position": "relative",                
+    "color": "#0088cc",                    
+    "margin-left": "1vh",              
+    "border": "none",                       
+    "cursor": "pointer"              
 },  {
     "color": "#333",
     "text-decoration": "underline"
