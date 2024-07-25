@@ -1,0 +1,13 @@
+{
+    sel: ["table#detail-view", "table#price-detail-view", "#receipt-items table.items.table tbody tr"],
+    details: {
+        "seller":   [2, "a"],       
+        "datetime": [3, "td"],             
+        "traffic":  [19, "td"],            
+        "dc":       [15, "td *"],     
+        "buyer":    [16, "td *"],     
+        "return":   [17, "", inner=false], 
+        "comment":  [21, "td"],           
+        "shop":     [1, "a"]             
+    }
+}
