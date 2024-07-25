@@ -1,13 +1,13 @@
 {
     "sel": ["table#detail-view", "table#price-detail-view", "#receipt-items table.items.table tbody tr"],
     "details": {
-        "seller":   [2, "a"],       
-        "datetime": [3, "td"],             
-        "traffic":  [19, "td"],            
-        "dc":       [15, "td *"],     
-        "buyer":    [16, "td *"],     
+        "seller":   [2, "a", true],       
+        "datetime": [3, "td", true],             
+        "traffic":  [19, "td", true],            
+        "dc":       [15, "td *", true],     
+        "buyer":    [16, "td *", true],     
         "return":   [17, "", false], 
-        "comment":  [21, "td"],           
-        "shop":     [1, "a"]             
+        "comment":  [21, "td", true],           
+        "shop":     [1, "a", true]             
     }
 }
