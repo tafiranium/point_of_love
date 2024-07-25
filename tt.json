@@ -6,7 +6,7 @@
         "traffic":  [19, "td"],            
         "dc":       [15, "td *"],     
         "buyer":    [16, "td *"],     
-        "return":   [17, "", inner=false], 
+        "return":   [17, "", false], 
         "comment":  [21, "td"],           
         "shop":     [1, "a"]             
     }
