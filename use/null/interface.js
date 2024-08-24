@@ -89,6 +89,19 @@ class Interface {
             buttons_list[cls] = elem    
           }
 
+          this.cat = ["ฅ^•⩊•^ฅ", "⎛⎝^>⩊<^⎠⎞"]
+          buttons_list["app_icon"].innerHTML = this.cat[0]
+
+          buttons_list["app_icon"].addEventListener("mouseover", () => {
+            buttons_list["app_icon"].innerHTML       =  this.cat[1]; 
+            buttons_list["app_icon"].style.fontSize  = "13px"; 
+          })
+
+          buttons_list["app_icon"].addEventListener("mouseout", () => {
+            buttons_list["app_icon"].innerHTML       =  this.cat[0]; 
+            buttons_list["app_icon"].style.fontSize  = "22px";
+          })
+
           let mass = [buttons_list["app_dc"], buttons_list["app_sbp"], buttons_list["app_dop"]]
           let all = [buttons_list["app_dop"], buttons_list["app_icon"], buttons_list["app_sbp"], buttons_list["app_copy_button"], buttons_list["app_dc"], buttons_list["app_error"]]
           
