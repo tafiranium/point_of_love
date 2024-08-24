@@ -1,5 +1,6 @@
 {
     "files": [
+      "session",
       "interface",
       "time", 
       "copy", 
