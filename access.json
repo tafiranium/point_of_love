@@ -1,10 +1,10 @@
 {
     "access": {
         "use": {
-            "bill":    ["c2FsZXMvdmlldy9pZA==",      false,  true ],
-            "sales":   ["c2FsZXMvbWFuYWdl",          false,  false],
-            "price":   ["cHJpY2VsaXN0cy92aWV3L2lk", "print", false],
-            "replace": ["bW92ZWdvb2RzL3ZpZXcvaWQ=", "print", false]
+            "c2FsZXMvdmlldy9pZA==":      ["bill",          true ],
+            "c2FsZXMvbWFuYWdl":          ["sales",         false],
+            "cHJpY2VsaXN0cy92aWV3L2lk":  ["print/price",   false],
+            "bW92ZWdvb2RzL3ZpZXcvaWQ=":  ["print/replace", false]
         }
     }
 }
