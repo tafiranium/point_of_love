@@ -218,7 +218,7 @@ class AnalIs {
         }
 
         function check(type, arg, add, ats, temp) {
-            // console.log(add, temp[add][2], ats[0]["traffic"])
+            console.log(ats, arg)
             if (type == 1) {return (temp[add][2][ats[0]["traffic"]]  != undefined)}
             if (type == 2)               {return one_check(arg, ats)}
             console.log(arg)
