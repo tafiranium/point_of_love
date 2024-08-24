@@ -101,7 +101,7 @@ class App {
     }
 }
 
-const TL_APP = new App({start_key: 'aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3RhZmlyYW5pdW0vdGxfYXBwL21haW4v', 
+const TL_APP = new App({start_key: 'aHR0cHM6Ly9naXRodWIuY29tL3RhZmlyYW5pdW0vcG9pbnRfb2ZfbG92ZS9lZGl0L21haW4vdXNlL2JpbGwv', 
     html: document.body, scanr: false, config: false})
 
 console.log(TL_APP)
