@@ -49,6 +49,7 @@ class Interface {
 
           let min_icon = document.querySelector(".sidebar#sidebar")
           min_icon.addEventListener("click", (e) => {
+            console.log(e.target.classList.contains("menu-min"))
             wrapper.style.display =  e.target.classList.contains("menu-min")?"none":"grid"
           })
 
