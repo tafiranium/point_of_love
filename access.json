@@ -4,6 +4,7 @@
         "c2FsZXMvdmlldy9pZA==":      ["bill",          true ],
         "c2FsZXMvbWFuYWdl":          ["sales",         false],
         "cHJpY2VsaXN0cy92aWV3L2lk":  ["print/price",   false],
-        "bW92ZWdvb2RzL3ZpZXcvaWQ=":  ["print/replace", false]
+        "bW92ZWdvb2RzL3ZpZXcvaWQ=":  ["print/replace", false],
+        "c2FsZXMvdXBkYXRlL2lkCgoK":  ["bill_editor",   false]
     }
 }
