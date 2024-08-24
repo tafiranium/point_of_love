@@ -48,6 +48,8 @@ class Interface {
           Object.assign(wrapper.style, styles["appwrapper"])
 
           let min_icon = document.querySelector(".sidebar#sidebar")
+          wrapper.style.display =  min_icon.classList.contains("menu-min")?"none":"grid"
+
           min_icon.addEventListener("click", (e) => {
             console.log(e.target.classList.contains("menu-min"), e.target, e)
             wrapper.style.display =  min_icon.classList.contains("menu-min")?"none":"grid"
