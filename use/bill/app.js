@@ -27,14 +27,15 @@ class App {
             icons: [["ฅ^•⩊•^ฅ", "⎛⎝^>⩊<^⎠⎞"], "≽/ᐠ - ˕ -マ≼"] })
         
         this.deny = get_localJson_if_exists_else_insert("deny", ["Не задан", ""])
-        
+        this.interface = new Interface(this.html)
+
         if (this.scanr == false) {
             let url = window.location.href
             let pref_url = get_local_if_exists_else_insert("pref_url", url)
             this.same_url = (url == pref_url)
         }
 
-        this.interface         = new Interface(this.html)
+        
 
         console.log((!this.same_url))
 
