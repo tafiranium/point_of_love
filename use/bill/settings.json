@@ -33,7 +33,7 @@
             "reason":   [20, "td", true],
             "dc":       [15, "td *", true],     
             "buyer":    [16, "td *", true],     
-            "return":   [17, "", false], 
+            "return":   [17, "cssDisplayNone", false], 
             "comment":  [21, "td", true]             
   },
 
