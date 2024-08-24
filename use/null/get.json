@@ -1,5 +1,6 @@
 {
     "files": [
-      "app"
+      "session",
+      "interface"
     ]
 }
