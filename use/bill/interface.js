@@ -47,6 +47,11 @@ class Interface {
           wrapper.classList.add("wrapper")
           Object.assign(wrapper.style, styles["appwrapper"])
 
+          let min_icon = document.querySelector(".sidebar#sidebar")
+          min_icon.addEventListener("click", (e) => {
+            wrapper.style.display =  e.target.classList.contains("menu-min")?"none":"grid"
+          })
+
           let start_color = "rgb(238, 238, 238)"
 
           const bst = get_localJson_if_exists_else_insert("styles_spans", {
