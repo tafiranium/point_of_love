@@ -1,0 +1,12 @@
+{
+    "access": {
+        "use": {
+            "bill": ["", true],
+            "sales": ["", false],
+            "print": {
+                "price": ["", false],
+                "replace": ["", false]
+            }
+        }
+    }
+}
