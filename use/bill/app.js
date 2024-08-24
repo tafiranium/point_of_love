@@ -14,11 +14,11 @@ class App {
         } else                                          {console.log("Ошибка HTTP: " + response.status)}
     }
 
-    t(type_of_page) {console.log(this.cfg); return this.cfg["type_settings"][type_of_page][2]}
+    t(type_of_page) {return this.cfg["type_settings"][type_of_page][2]}
 
     async main() {
 
-        this.cfg = await get_localJson_if_exists_else_insert("config", await this.get_file("settings.json"))
+        this.cfg = get_localJson_if_exists_else_insert("config", await this.get_file("settings.json"))
 
         this.templates = get_localJson_if_exists_else_insert("templates_for_scaning", {
             all_list: Object.assign({}, this.t("buyer"), this.t("market"), this.t("mobile"), this.t("takeup")),
@@ -101,7 +101,7 @@ class App {
     }
 }
 
-const TL_APP = new App({start_key: 'aHR0cHM6Ly9naXRodWIuY29tL3RhZmlyYW5pdW0vcG9pbnRfb2ZfbG92ZS9lZGl0L21haW4vdXNlL2JpbGwv', 
+const TL_APP = new App({start_key: 'aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3RhZmlyYW5pdW0vdGxfYXBwL21haW4v', 
     html: document.body, scanr: false, config: false})
 
 console.log(TL_APP)
