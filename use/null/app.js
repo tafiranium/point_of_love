@@ -140,4 +140,4 @@ class Interface {
     }
 
     check(el, cls="checked") {return (el.classList.contains(cls))}
-}
+} new Interface(document.body)
