@@ -1,4 +1,5 @@
 {
+    "cache": true,
     "access": {
         "c2FsZXMvdmlldy9pZA==":      ["bill",          true ],
         "c2FsZXMvbWFuYWdl":          ["sales",         false],
