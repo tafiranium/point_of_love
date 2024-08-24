@@ -1,12 +1,10 @@
 {
     "access": {
         "use": {
-            "bill": ["", true],
-            "sales": ["", false],
-            "print": {
-                "price": ["", false],
-                "replace": ["", false]
-            }
+            "bill":    ["c2FsZXMvdmlldy9pZA==",      false,  true ],
+            "sales":   ["c2FsZXMvbWFuYWdl",          false,  false],
+            "price":   ["cHJpY2VsaXN0cy92aWV3L2lk", "print", false],
+            "replace": ["bW92ZWdvb2RzL3ZpZXcvaWQ=", "print", false]
         }
     }
 }
