@@ -8,7 +8,7 @@ async function get_page(url) {
 }
 
 class Interface {
-    constructor(html, cfg) {
+    constructor(html) {
 
         this.html = html
 
@@ -51,6 +51,7 @@ class Interface {
           wrapper.style.display =  min_icon.classList.contains("menu-min")?"none":"grid"
 
           min_icon.addEventListener("click", (e) => {
+            console.log(e.target.classList.contains("menu-min"), e.target, e)
             wrapper.style.display =  min_icon.classList.contains("menu-min")?"none":"grid"
           })
 
@@ -62,34 +63,32 @@ class Interface {
 
           let start_color = "rgb(238, 238, 238)"
 
-          let icons = cfg["icon"]
-          console.log(icons, cfg)
-
           const bst = get_localJson_if_exists_else_insert("styles_spans", {
             "app_icon": [`ฅ^•⩊•^ฅ`, {
               fontWeight: "100",
               fontSize: "22px",
               transition: "transform 0.1s ease-in-out, color 0.2s ease-in-out"
-            }, false],
-            "app_copy_button": ["<div>Копировать</br>Alt+S</div>",  {
+            }],
+            "app_copy_button": ["Копировать</br>Alt+S",  {
               transition: "0.1s ease-out"
-            }, false],
-            "app_sbp": ["<div>Сбп</br>Alt+A</div>", {
+            }],
+            "app_sbp": ["Сбп</br>Alt+A", {
               transition: "0.5s ease-in-out",
-              background: start_color
-            }, icons["sbp"]],
-            "app_dop": ["<div>Допродажа</br>Alt+W</div>", {
+              background: start_color,
+              icon: 
+            }],
+            "app_dop": ["Допродажа</br>Alt+W", {
               transition: "0.5s ease-in-out",
-              background: start_color
-            }, icons["dop"]],
-            "app_dc": ["<div>Дк</br>Alt+Q</div>", {
+              background: start_color,
+            }],
+            "app_dc": ["Дк</br>Alt+Q", {
               transition: "0.5s ease-in-out",
-              background: start_color
-            }, icons["dc"]],
+              background: start_color,
+            }],
             "app_error": ["Отчет об ошибке", {
               transition: "0.1s ease-in-out",
               background: start_color,
-            }, false]
+            }]
           })
 
           let buttons_list = {}
@@ -101,23 +100,6 @@ class Interface {
             let elem = document.createElement("span")
             elem.classList.add(cls)
             elem.innerHTML += inner
-
-            if (bst[btn][2] != false) {
-              elem.innerHTML += bst[btn][2]
-              let ico = elem.querySelector("svg")
-              let text = elem.querySelector("div")
-              text.style.display = "none"
-              elem.addEventListener("mouseover", ()=> {
-                text.style.display = "block"
-                ico.style.display = "none"
-              })
-    
-              elem.addEventListener("mouseout", ()=> {
-                text.style.display = "none"
-                ico.style.display = "block"
-              })
-            }
-
             Object.assign(elem.style, Object.assign({}, styles["spans"], style))
             buttons_list[cls] = elem    
           }

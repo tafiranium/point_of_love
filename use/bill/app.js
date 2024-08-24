@@ -27,7 +27,7 @@ class App {
             icons: [["ฅ^•⩊•^ฅ", "⎛⎝^>⩊<^⎠⎞"], "≽/ᐠ - ˕ -マ≼"] })
         
         this.deny = get_localJson_if_exists_else_insert("deny", ["Не задан", ""])
-        this.interface = new Interface(this.html, this.cfg)
+        this.interface = new Interface(this.html)
 
         if (this.scanr == false) {
             let url = window.location.href
