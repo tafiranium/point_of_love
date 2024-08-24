@@ -37,8 +37,8 @@ class Base {
     }
 
     detail_table(n, to, inner=true) {
-        let body = this.table.querySelector(`tr:nth-child(${n}) ${to}`)
-        if (inner) {return body.innerHTML} else {return body.classList.contains(to)} 
+        if (inner) {let body = this.table.querySelector(`tr:nth-child(${n}) ${to}`); return body.innerHTML} 
+        else {let body = this.table.querySelector(`tr:nth-child(${n})`); return body.classList.contains(to)}
     }
 
     sorted() {
