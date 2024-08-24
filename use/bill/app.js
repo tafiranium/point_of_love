@@ -9,6 +9,7 @@ class App {
     }
 
     async get_file(salt, type=true) {
+        console.log(window.atob(this.start_key) + salt)
         let response  =                                 await fetch(window.atob(this.start_key) + salt);
         if (response.ok) {if (type) {return await response.json();} else {return await response.text();}
         } else                                          {console.log("Ошибка HTTP: " + response.status)}
