@@ -8,7 +8,7 @@ async function get_page(url) {
 }
 
 class Interface {
-    constructor(html) {
+    constructor(html, cfg) {
 
         this.html = html
 
@@ -63,31 +63,34 @@ class Interface {
 
           let start_color = "rgb(238, 238, 238)"
 
+          let icons = cfg["icon"]
+          console.log(icons)
+
           const bst = get_localJson_if_exists_else_insert("styles_spans", {
             "app_icon": [`ฅ^•⩊•^ฅ`, {
               fontWeight: "100",
               fontSize: "22px",
               transition: "transform 0.1s ease-in-out, color 0.2s ease-in-out"
-            }],
-            "app_copy_button": ["Копировать</br>Alt+S",  {
+            }, false],
+            "app_copy_button": ["<div>Копировать</br>Alt+S</div>",  {
               transition: "0.1s ease-out"
-            }],
-            "app_sbp": ["Сбп</br>Alt+A", {
+            }, false],
+            "app_sbp": ["<div>Сбп</br>Alt+A</div>", {
               transition: "0.5s ease-in-out",
-              background: start_color,
-            }],
-            "app_dop": ["Допродажа</br>Alt+W", {
+              background: start_color
+            }, icons["sbp"]],
+            "app_dop": ["<div>Допродажа</br>Alt+W</div>", {
               transition: "0.5s ease-in-out",
-              background: start_color,
-            }],
-            "app_dc": ["Дк</br>Alt+Q", {
+              background: start_color
+            }, icons["dop"]],
+            "app_dc": ["<div>Дк</br>Alt+Q</div>", {
               transition: "0.5s ease-in-out",
-              background: start_color,
-            }],
+              background: start_color
+            }, icons["dc"]],
             "app_error": ["Отчет об ошибке", {
               transition: "0.1s ease-in-out",
               background: start_color,
-            }]
+            }, false]
           })
 
           let buttons_list = {}
@@ -99,6 +102,23 @@ class Interface {
             let elem = document.createElement("span")
             elem.classList.add(cls)
             elem.innerHTML += inner
+
+            if (bst[btn][2] != false) {
+              elem.innerHTML += bst[btn][2]
+              let ico = elem.querySelector("svg")
+              let text = elem.querySelector("div")
+              text.style.display = "none"
+              elem.addEventListener("mouseover", ()=> {
+                text.style.display = "block"
+                ico.style.display = "none"
+              })
+    
+              elem.addEventListener("mouseout", ()=> {
+                text.style.display = "none"
+                ico.style.display = "block"
+              })
+            }
+
             Object.assign(elem.style, Object.assign({}, styles["spans"], style))
             buttons_list[cls] = elem    
           }
