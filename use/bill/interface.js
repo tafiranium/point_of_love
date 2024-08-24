@@ -47,20 +47,6 @@ class Interface {
           wrapper.classList.add("wrapper")
           Object.assign(wrapper.style, styles["appwrapper"])
 
-          let min_icon = document.querySelector(".sidebar#sidebar")
-          wrapper.style.display =  min_icon.classList.contains("menu-min")?"none":"grid"
-
-          min_icon.addEventListener("click", (e) => {
-            console.log(e.target.classList.contains("menu-min"), e.target, e)
-            wrapper.style.display =  min_icon.classList.contains("menu-min")?"none":"grid"
-          })
-
-          let min_icon_arrow = document.querySelector(".sidebar#sidebar i")
-          min_icon_arrow.addEventListener("click", (e) => {
-            console.log(e.target.classList.contains("menu-min"), e.target, e)
-            wrapper.style.display =  min_icon.classList.contains("menu-min")?"none":"grid"
-          })
-
           let start_color = "rgb(238, 238, 238)"
 
           const bst = get_localJson_if_exists_else_insert("styles_spans", {
