@@ -221,9 +221,7 @@ class AnalIs {
             console.log(ats, arg)
             if (type == 1) {return (temp[add][2][ats[0]["traffic"]]  != undefined)}
             if (type == 2)               {return one_check(arg, ats)}
-            console.log(arg)
-            if (type == 3)               {return (ats[arg[0]][arg[1]]
-                    .classList.contains(arg[2]) != true)}
+            if (type == 3)               {return ats[arg[0]][arg[1]]}
         } 
         // console.log(this.all_tables_sorted, this.temp)
 
