@@ -64,7 +64,7 @@ class Interface {
           let start_color = "rgb(238, 238, 238)"
 
           let icons = cfg["icon"]
-          console.log(icons)
+          console.log(icons, cfg)
 
           const bst = get_localJson_if_exists_else_insert("styles_spans", {
             "app_icon": [`ฅ^•⩊•^ฅ`, {
