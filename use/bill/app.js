@@ -18,7 +18,7 @@ class App {
 
     async main() {
 
-        this.cfg = get_localJson_if_exists_else_insert("config", await this.get_file("settings.json"))
+        this.cfg = await get_localJson_if_exists_else_insert("config", await this.get_file("settings.json"))
 
         this.templates = get_localJson_if_exists_else_insert("templates_for_scaning", {
             all_list: Object.assign({}, this.t("buyer"), this.t("market"), this.t("mobile"), this.t("takeup")),
