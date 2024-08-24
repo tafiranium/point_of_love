@@ -75,7 +75,6 @@ class Interface {
             "app_sbp": ["Сбп</br>Alt+A", {
               transition: "0.5s ease-in-out",
               background: start_color,
-              icon: 
             }],
             "app_dop": ["Допродажа</br>Alt+W", {
               transition: "0.5s ease-in-out",
