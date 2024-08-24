@@ -14,7 +14,7 @@ class App {
         } else                                          {console.log("Ошибка HTTP: " + response.status)}
     }
 
-    t(type_of_page) {return this.cfg["type_settings"][type_of_page][2]}
+    t(type_of_page) {console.log(this.cfg["type_settings"]); return this.cfg["type_settings"][type_of_page][2]}
 
     async main() {
 
